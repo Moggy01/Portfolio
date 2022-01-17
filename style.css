@@ -64,7 +64,7 @@ button:hover {
   padding: 5px;
   width: 400px;
   text-align: center;
-  flex: 3 5 0%;
+  flex: 3 2 0%;
 }
 .ContactMe {
   background-color: #284b63;
@@ -74,7 +74,7 @@ button:hover {
   width: 400px;
   text-align: center;
   font-family: "lato", sans-serif;
-  flex: 1 5 0%;
+  flex: 1 2 0%;
 }
 
 i {
@@ -87,6 +87,58 @@ i {
   position: absolute;
   top: 35px;
   right: 5px;
+}
+.card {
+  display: flex;
+
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: 504;
+  margin: 15px;
+  border-radius: 20px;
+  border: 20px;
+  color: azure;
+  background-color: #3c6e71;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.middle {
+  background-color: #284b63;
+}
+
+img {
+  margin-top: 5px;
+  width: 350px;
+  height: 264px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+  height: 240px;
+  padding: 4px 30px 15px 30px;
+}
+
+.category {
+  font-size: 12px;
+  color: azure;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 7px 0px 0px 0px;
+  text-transform: capitalize;
+}
+
+/* p {
+  margin-top: 10px;
+  color: rgb(63, 63, 63);
+} */
+.inline {
+  display: inline;
 }
 
 @media screen and (max-width: 480px) {
