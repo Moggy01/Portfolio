@@ -32,6 +32,9 @@ html {
   color: whitesmoke;
   /* flex: 1; */
 }
+button {
+  border-radius: 10px;
+}
 button:hover {
   background-color: rgb(51, 232, 245);
   border-radius: 20px;
@@ -82,15 +85,19 @@ i {
   position: absolute;
   top: 5px;
   right: 5px;
+  font-size: 50px;
+  /* width: 100px;
+  height: 100px;
+  background-size: 100% 100%; */
 }
 #github {
   position: absolute;
-  top: 35px;
+  top: 60px;
   right: 5px;
 }
 .card {
   display: flex;
-
+  flex: 1 2 0%;
   display: inline-block;
   vertical-align: top;
   width: auto;
