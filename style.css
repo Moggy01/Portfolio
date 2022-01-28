@@ -34,11 +34,14 @@ html {
 }
 .button {
   border-radius: 10px;
-  background-color: #284b63;
-  color: whitesmoke;
+  background-color: #d9d9d9;
+  color: #284b63;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
 }
 .button:hover {
-  background-color: rgb(51, 232, 245);
+  background-color: #3c6e71;
+  color: #d9d9d9;
   border-radius: 20px;
   cursor: pointer;
   border: none;
@@ -167,14 +170,14 @@ textarea {
   border: none;
 }
 .button1 {
-  background-color: #1ac0f3;
+  background-color: #3c6e71;
   padding: 14px 20px;
   cursor: pointer;
   color: aliceblue;
   transition: 0.2s ease-in-out;
 }
-.button:hover {
-  background-color: yellowgreen;
+.button1:hover {
+  background-color: #d9d9d9;
   transform: scale(1.05);
 }
 
@@ -186,33 +189,45 @@ textarea {
     font-size: 100%;
     display: flex;
   }
+  /* .category {
+    font-size: 20px;
+  } */
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero-image {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   article {
-    font-size: 105%;
+    font-size: 1.2em;
     display: flex;
   }
+  /* .category {
+    font-size: 25px;
+  } */
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero-image {
-    font-size: 115%;
+    font-size: 1.5em;
   }
   article {
-    font-size: 115%;
+    font-size: 1.5em;
     display: flex;
   }
+  /* .category {
+    font-size: 30px;
+  } */
 }
 @media screen and (min-width: 1025px) {
   .hero-image {
-    font-size: 124%;
+    font-size: 1.7em;
   }
   article {
-    font-size: 124%;
+    font-size: 1.7em;
     display: flex;
   }
+  /* .category {
+    font-size: 35px;
+  } */
 }
 
 /* .container {
