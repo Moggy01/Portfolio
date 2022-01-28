@@ -34,6 +34,7 @@ html {
 }
 button {
   border-radius: 10px;
+  background-color: #284b63;
 }
 button:hover {
   background-color: rgb(51, 232, 245);
@@ -52,7 +53,7 @@ button:hover {
 
 .AboutMe {
   background-color: #3c6e71;
-  margin: 5px;
+  margin: 2.5px 0;
   padding: 5px;
   border: 1px;
   color: white;
@@ -63,7 +64,7 @@ button:hover {
 }
 .Portfolio {
   background-color: #d9d9d9;
-  margin: 5px;
+  margin: 2.5px 0;
   padding: 5px;
   width: 400px;
   text-align: center;
@@ -71,7 +72,7 @@ button:hover {
 }
 .ContactMe {
   background-color: #284b63;
-  margin: 5px;
+  margin: 2.5px 0;
   padding: 5px;
   color: white;
   width: 400px;
@@ -101,7 +102,7 @@ i {
   display: inline-block;
   vertical-align: top;
   width: auto;
-  height: 504;
+  height: auto;
   margin: 15px;
   border-radius: 20px;
   border: 20px;
@@ -155,7 +156,7 @@ h3 {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero-image {
-    font-size: 105%;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
