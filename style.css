@@ -30,6 +30,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: whitesmoke;
+  padding-top: 20px;
   /* flex: 1; */
 }
 .button {
@@ -46,6 +47,56 @@ html {
   cursor: pointer;
   border: none;
   transform: scale(2);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: #3c6e71;
+  background-color: #f9f9f9;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 2px 4px;
+  text-align: center;
+  margin: 2px 4px;
+  /* z-index: 1; */
+}
+.menu:hover {
+  cursor: pointer;
+  background-color: #3c6e71;
+  color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(24, 23, 23, 0.274);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #284b63;
 }
 .container {
   display: flex;
@@ -95,11 +146,20 @@ i {
   height: 100px;
   background-size: 100% 100%; */
 }
+i:hover {
+  cursor: pointer;
+}
 #github {
   position: absolute;
   top: 60px;
   right: 5px;
 }
+#dropdown {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
 .card {
   display: flex;
   flex: 1 2 0%;
@@ -189,17 +249,23 @@ textarea {
     font-size: 100%;
     display: flex;
   }
+  ul {
+    display: none;
+  }
   /* .category {
     font-size: 20px;
   } */
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero-image {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   article {
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: flex;
+  }
+  ul {
+    display: none;
   }
   /* .category {
     font-size: 25px;
@@ -207,11 +273,14 @@ textarea {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero-image {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   article {
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: flex;
+  }
+  .dropdown {
+    display: none;
   }
   /* .category {
     font-size: 30px;
@@ -219,11 +288,14 @@ textarea {
 }
 @media screen and (min-width: 1025px) {
   .hero-image {
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
   article {
-    font-size: 1.7em;
+    font-size: 1.3em;
     display: flex;
+  }
+  .dropdown {
+    display: none;
   }
   /* .category {
     font-size: 35px;
